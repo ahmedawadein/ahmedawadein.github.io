@@ -630,6 +630,263 @@
     margin-top: 8px;
   }
 
+
+  /* ── PATIENT EDUCATION ── */
+  .education-section { background: var(--white); }
+  .education-section .section-title-en { color: var(--navy); }
+
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .edu-card {
+    border: 1px solid var(--cream-mid);
+    padding: 32px 28px;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .edu-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--gold);
+  }
+
+  .edu-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+
+  .edu-card-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--cream-mid);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .edu-card-title-en {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .edu-card-title-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    color: var(--gold);
+    direction: rtl;
+    margin-bottom: 12px;
+  }
+
+  .edu-card-text-en {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-mid);
+  }
+
+  .edu-card-text-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-mid);
+    direction: rtl;
+    margin-top: 8px;
+  }
+
+  .edu-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    padding: 14px 32px;
+    background: var(--navy);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .edu-download:hover { background: var(--gold); color: var(--deep); }
+
+  /* ── VIDEOS ── */
+  .videos-section { background: var(--navy); }
+  .videos-section .section-title-en { color: var(--white); }
+
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+
+  .video-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(184,150,110,0.2);
+    overflow: hidden;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  .video-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+
+  .video-thumb {
+    position: relative;
+    padding-top: 56.25%;
+    background: rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+
+  .video-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+
+  .video-play-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    transition: all 0.3s;
+  }
+
+  .video-card:hover .video-play-btn { background: rgba(184,150,110,0.3); color: var(--gold); }
+
+  .video-info { padding: 18px 20px; }
+
+  .video-title-en {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .video-title-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    color: var(--gold-light);
+    direction: rtl;
+    line-height: 1.6;
+  }
+
+  .channel-cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* ── REVIEWS ── */
+  .reviews-section { background: var(--cream); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+
+  .review-card {
+    background: var(--white);
+    padding: 28px;
+    border-bottom: 3px solid var(--gold);
+    transition: all 0.3s;
+  }
+
+  .review-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+
+  .review-stars { color: #f5a623; font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-mid);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+
+  .review-text-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--text-mid);
+    direction: rtl;
+    font-style: normal;
+  }
+
+  .review-author {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--navy);
+  }
+
+  .review-source {
+    font-size: 10px;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+
+  .reviews-summary {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    background: var(--navy);
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+
+  .reviews-big-score {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .reviews-meta { flex: 1; }
+  .reviews-stars-big { color: #f5a623; font-size: 24px; letter-spacing: 3px; }
+  .reviews-count { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 6px; letter-spacing: 2px; }
+
+  .google-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: var(--white);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .google-btn:hover { background: var(--gold); color: var(--deep); }
+
+  @media (max-width: 768px) {
+    .reviews-summary { gap: 20px; padding: 24px; }
+    .reviews-big-score { font-size: 3.5rem; }
+  }
+
 </style>
 </head>
 <body>
@@ -651,10 +908,10 @@
   <h1 class="hero-name-ar ar-content">دكتور أحمد رضا عوضين</h1>
   <h1 class="hero-name-ar en-content" style="font-size:clamp(1.4rem,3vw,2rem); margin-top:6px;">دكتور أحمد رضا عوضين</h1>
   <div class="hero-divider"></div>
-  <p class="hero-title-en en-content">Consultant Ophthalmologist &amp; Strabismus Surgeon</p>
-  <p class="hero-title-ar en-content">استشاري طب وجراحة العيون والحول</p>
-  <p class="hero-title-en ar-content">استشاري طب وجراحة العيون والحول</p>
-  <p class="hero-title-ar ar-content">Consultant Ophthalmologist &amp; Strabismus Surgeon</p>
+  <p class="hero-title-en en-content">Professor of Ophthalmology · Cairo University · MD, FRCS</p>
+  <p class="hero-title-ar en-content">أستاذ طب وجراحة العيون — جامعة القاهرة</p>
+  <p class="hero-title-en ar-content">أستاذ طب وجراحة العيون — جامعة القاهرة</p>
+  <p class="hero-title-ar ar-content">Professor of Ophthalmology · Cairo University · MD, FRCS</p>
   <div class="hero-rating">
     <span class="stars">★★★★★</span>
     <span class="score">4.8</span>
@@ -664,7 +921,7 @@
     </span>
   </div>
   <div class="hero-cta">
-    <a href="tel:01284705461" class="btn-primary">
+    <a href="tel:01223911743" class="btn-primary">
       <span class="inline-en">📞 Book Appointment</span>
       <span class="inline-ar">📞 احجز موعد</span>
     </a>
@@ -686,6 +943,9 @@
   <a href="#expertise">
     <span class="inline-en">Expertise</span><span class="inline-ar">التخصص</span>
   </a>
+  <a href="#education"><span class="inline-en">Patient Ed.</span><span class="inline-ar">تثقيف المرضى</span></a>
+  <a href="#videos"><span class="inline-en">Videos</span><span class="inline-ar">فيديوهات</span></a>
+  <a href="#reviews"><span class="inline-en">Reviews</span><span class="inline-ar">التقييمات</span></a>
   <a href="#contact">
     <span class="inline-en">Contact</span><span class="inline-ar">تواصل معنا</span>
   </a>
@@ -705,14 +965,14 @@
         <h2 class="section-title-ar en-content">رعاية عيون متميزة على أعلى مستوى</h2>
         <div class="section-rule"></div>
         <div class="about-text en-content">
-          <p>Dr. Ahmed Awadein is a consultant ophthalmologist and strabismus surgeon based in Giza, Egypt, with extensive expertise in the diagnosis and surgical management of complex eye conditions in both adults and children.</p>
-          <p>He specializes in strabismus surgery, pediatric ophthalmology, and advanced intraocular lens implantation techniques, with a particular focus on achieving optimal visual outcomes for his patients.</p>
-          <p>Dr. Awadein combines clinical excellence with active research, contributing to peer-reviewed publications and international ophthalmic education.</p>
+          <p>Prof. Dr. Ahmed Awadein is a Professor of Ophthalmology at Cairo University (MD, FRCS), Fellow of the Royal College of Surgeons of Glasgow, and Fellow of Johns Hopkins University. He is one of Egypt's foremost specialists in pediatric ophthalmology and strabismus surgery, with over <strong>15,000 operations</strong> performed.</p>
+          <p>He specializes in strabismus surgery, pediatric ophthalmology, and advanced intraocular lens implantation, with a commitment to achieving the best possible visual outcomes for every patient.</p>
+          <p>Dr. Awadein is also a prolific researcher with more than <strong>70 peer-reviewed publications</strong> and book chapters, and is a regular speaker at international ophthalmology conferences.</p>
         </div>
         <div class="about-text about-text-ar ar-content">
-          <p>دكتور أحمد رضا عوضين استشاري طب وجراحة العيون والحول في الجيزة، مصر، يتمتع بخبرة واسعة في تشخيص وعلاج أمراض العيون المعقدة لدى البالغين والأطفال.</p>
-          <p>يتخصص في جراحة الحول، وطب عيون الأطفال، وزراعة العدسات داخل العين، مع تركيز خاص على تحقيق أفضل النتائج البصرية لمرضاه.</p>
-          <p>يجمع الدكتور عوضين بين التميز السريري والبحث العلمي النشط، بمساهمات في المجلات الطبية المحكّمة والتعليم الطبي الدولي.</p>
+          <p>أ.د. أحمد رضا عوضين أستاذ طب وجراحة العيون بجامعة القاهرة، حاصل على درجة MD وزمالة كلية الجراحين الملكية بغلاسكو (FRCS)، وزميل جامعة جونز هوبكنز الأمريكية. أجرى أكثر من <strong>١٥٠٠٠ عملية جراحية</strong> في تخصص الحول وطب عيون الأطفال.</p>
+          <p>يتخصص في جراحة الحول، وطب عيون الأطفال، وزراعة العدسات داخل العين، مع تركيز خاص على تحقيق أفضل النتائج البصرية.</p>
+          <p>للدكتور عوضين أكثر من <strong>٧٠ بحثاً علمياً</strong> في مجلات طبية محكّمة وفصول في كتب طبية، وهو متحدث دولي منتظم في مؤتمرات طب العيون.</p>
         </div>
       </div>
       <div class="about-photos">
@@ -727,26 +987,26 @@
           <p class="photo-caption ar-content">في غرفة العمليات</p>
         </div>
       </div>
-      <div class="about-stats" style="display:none;">
+      <div class="about-stats">
         <div class="stat-box">
-          <div class="stat-number">4.8</div>
-          <div class="stat-label-en">Google Rating</div>
-          <div class="stat-label-ar">تقييم Google</div>
+          <div class="stat-number">15K+</div>
+          <div class="stat-label-en en-content">Surgeries Performed</div>
+          <div class="stat-label-ar ar-content">عملية أجراها</div>
         </div>
         <div class="stat-box">
-          <div class="stat-number">53+</div>
-          <div class="stat-label-en">Patient Reviews</div>
-          <div class="stat-label-ar">تقييمات المرضى</div>
+          <div class="stat-number">70+</div>
+          <div class="stat-label-en en-content">Publications</div>
+          <div class="stat-label-ar ar-content">بحثاً علمياً</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">4.8</div>
+          <div class="stat-label-en en-content">Google Rating</div>
+          <div class="stat-label-ar ar-content">تقييم Google</div>
         </div>
         <div class="stat-box">
           <div class="stat-number">20+</div>
-          <div class="stat-label-en">Years Experience</div>
-          <div class="stat-label-ar">سنوات خبرة</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">∞</div>
-          <div class="stat-label-en">Commitment to Care</div>
-          <div class="stat-label-ar">الالتزام بالرعاية</div>
+          <div class="stat-label-en en-content">Years Experience</div>
+          <div class="stat-label-ar ar-content">سنوات خبرة</div>
         </div>
       </div>
     </div>
@@ -903,6 +1163,240 @@
   </div>
 </section>
 
+
+<!-- ── PATIENT EDUCATION ── -->
+<section class="education-section" id="education">
+  <div class="section-inner">
+    <span class="section-label">
+      <span class="inline-en">Know Before Your Surgery</span>
+      <span class="inline-ar">اعرف قبل عمليتك</span>
+    </span>
+    <h2 class="section-title-en en-content">Patient Education</h2>
+    <h2 class="section-title-ar ar-content">تثقيف المرضى</h2>
+    <h2 class="section-title-ar en-content">تثقيف المرضى</h2>
+    <div class="section-rule"></div>
+    <p class="en-content" style="font-size:14px; color:var(--text-mid); max-width:700px; line-height:1.9;">Understanding your surgery helps reduce anxiety and improve outcomes. Below are the key topics covered in our comprehensive strabismus surgery patient guide.</p>
+    <p class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:15px; color:var(--text-mid); max-width:700px; line-height:2; direction:rtl;">فهم عمليتك يساعد على تقليل القلق وتحسين النتائج. فيما يلي المحاور الرئيسية لدليل مرضى جراحة الحول الشامل.</p>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-card-num">01</div>
+        <div class="edu-card-title-en en-content">What is Strabismus?</div>
+        <div class="edu-card-title-ar">ما هو الحول؟ أسبابه وتشخيصه</div>
+        <div class="edu-card-text-en en-content">Strabismus is misalignment of the eyes — one eye points toward the target while the other deviates. Causes include congenital factors, refractive errors, muscle paralysis, and systemic disease.</div>
+        <div class="edu-card-text-ar ar-content">الحول هو عدم التقاء العينين نحو نفس الهدف. أسبابه تشمل الحول الخلقي، وعيوب الانكسار، وشلل عضلات العين، والأمراض العامة.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">02</div>
+        <div class="edu-card-title-en en-content">Treatment Options</div>
+        <div class="edu-card-title-ar">طرق علاج الحول</div>
+        <div class="edu-card-text-en en-content">Treatment depends on the type of strabismus and may include glasses (for hyperopia-related squint), eye patching for amblyopia, prismatic lenses for diplopia, or surgical correction.</div>
+        <div class="edu-card-text-ar ar-content">يعتمد العلاج على نوع الحول وقد يشمل النظارة الطبية، وتغطية العين للكسل البصري، والمنشور الطبي، أو التدخل الجراحي.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">03</div>
+        <div class="edu-card-title-en en-content">Surgery in Detail</div>
+        <div class="edu-card-title-ar">جراحة الحول بالتفصيل</div>
+        <div class="edu-card-text-en en-content">Strabismus surgery works on the eye muscles from the outside — the eye is never opened. The surgeon detaches and reattaches muscles with precise sutures. No laser is used. Duration: 30–90 minutes under general anesthesia.</div>
+        <div class="edu-card-text-ar ar-content">جراحة الحول تعمل على عضلات العين من الخارج دون فتحها أبداً. لا تُجرى باللزر. المدة ٣٠–٩٠ دقيقة تحت التخدير الكلي للأطفال.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">04</div>
+        <div class="edu-card-title-en en-content">After Surgery</div>
+        <div class="edu-card-title-ar">ماذا أتوقع بعد الجراحة؟</div>
+        <div class="edu-card-text-en en-content">Redness and mild swelling are completely normal. TV, phone, computer, reading and sports are all permitted from the day after surgery. Only restriction: no swimming for 4 weeks. Eye drops for 1–3 weeks.</div>
+        <div class="edu-card-text-ar ar-content">الاحمرار والتورم طبيعيان تماماً. يمكن ممارسة جميع الأنشطة من اليوم التالي. الاستثناء الوحيد: تجنب السباحة ٤ أسابيع. قطرة مضاد حيوي لأسبوعين.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">05</div>
+        <div class="edu-card-title-en en-content">Success Rates</div>
+        <div class="edu-card-title-ar">نسب النجاح والمضاعفات</div>
+        <div class="edu-card-text-en en-content">Short-term success (3–6 months): 85–90%. Long-term recurrence: 5–10%. Need for more than 2 surgeries: less than 3%. The need for a repeat surgery does not mean an error occurred — it is an expected biological variation.</div>
+        <div class="edu-card-text-ar ar-content">نجاح الجراحة الأولى قصير المدى: ٨٥–٩٠٪. ارتجاع الحول على المدى البعيد: ٥–١٠٪. الحاجة لأكثر من جراحتين: أقل من ٣٪. الحاجة لجراحة أخرى لا تعني وجود خطأ.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">06</div>
+        <div class="edu-card-title-en en-content">When to Call Immediately</div>
+        <div class="edu-card-title-ar">متى تتصل بطبيبك فوراً؟</div>
+        <div class="edu-card-text-en en-content">Contact us immediately if you notice: sudden vision loss, severe pain unresponsive to painkillers, thick yellow/green discharge, fever above 38.5°C, or severe increasing eyelid swelling. Note: redness alone is normal and not a danger sign.</div>
+        <div class="edu-card-text-ar ar-content">اتصل فوراً عند: تراجع مفاجئ في الإبصار، ألم شديد لا يستجيب للمسكنات، إفرازات صفراء أو خضراء، حرارة فوق ٣٨.٥، تورم شديد متزايد في الجفون. الاحمرار وحده طبيعي ولا يستدعي القلق.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">07</div>
+        <div class="edu-card-title-en en-content">Pre-Operative Checklist</div>
+        <div class="edu-card-title-ar">التحضير قبل العملية</div>
+        <div class="edu-card-text-en en-content">Bring your glasses to the operating room. Fast for 4–6 hours before surgery. Complete all lab tests in advance. Inform the nursing team of any health conditions or prior eye surgeries. Multiple pre-op visits may be needed for children.</div>
+        <div class="edu-card-text-ar ar-content">أحضر نظارتك إلى غرفة العمليات. صُم ٤–٦ ساعات قبل الجراحة. أنجز التحاليل المطلوبة. أبلغ فريق التمريض بأي حالة صحية أو جراحة عين سابقة. قد يحتاج الأطفال لزيارات تحضيرية متعددة.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">08</div>
+        <div class="edu-card-title-en en-content">Understanding Redness</div>
+        <div class="edu-card-title-ar">الاحمرار بعد العملية</div>
+        <div class="edu-card-text-en en-content">Post-operative redness is completely normal and does not indicate infection or inflammation. It does not restrict activity. Day 1 the eye looks bright red; by weeks 4–6 redness is mostly gone. Sunglasses are optional — cosmetic only.</div>
+        <div class="edu-card-text-ar ar-content">الاحمرار بعد الجراحة طبيعي تماماً ولا يعني التهاباً أو عدوى. لا يمنع أي نشاط. يكون شديداً في اليوم الأول ثم يتلاشى تدريجياً خلال ٤–٦ أسابيع. النظارة الشمسية اختيارية لأغراض تجميلية فقط.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">09</div>
+        <div class="edu-card-title-en en-content">Double Vision (Diplopia)</div>
+        <div class="edu-card-title-ar">الرؤية المزدوجة بعد الجراحة</div>
+        <div class="edu-card-text-en en-content">Some patients experience temporary double vision after surgery. This happens as the brain adapts to the new eye position, and may also result from intentional temporary overcorrection. It mostly resolves on its own within weeks.</div>
+        <div class="edu-card-text-ar ar-content">قد يعاني بعض المرضى من رؤية مزدوجة مؤقتة بعد العملية. يحدث هذا لأن الدماغ يحتاج وقتاً للتكيف مع وضع العين الجديد، وقد يكون مقصوداً من الجراح. في الغالب يزول من تلقاء نفسه خلال أسابيع.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">10</div>
+        <div class="edu-card-title-en en-content">Timing of Results</div>
+        <div class="edu-card-title-ar">متى تظهر نتيجة العملية؟</div>
+        <div class="edu-card-text-en en-content">Results are not always immediate. Swelling temporarily hides the true position. Your surgeon may intentionally leave a slight overcorrection (especially for outward squint). The final assessment is made at 6–8 weeks post-op.</div>
+        <div class="edu-card-text-ar ar-content">النتيجة لا تظهر فوراً دائماً. التورم يُخفي الموضع الحقيقي مؤقتاً. قد يترك الجراح تصحيحاً زائداً مقصوداً. يُجرى التقييم النهائي في الأسبوعين ٦–٨ بعد العملية.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">11</div>
+        <div class="edu-card-title-en en-content">Surgery &amp; Glasses</div>
+        <div class="edu-card-title-ar">الجراحة والنظارة الطبية</div>
+        <div class="edu-card-text-en en-content">In most cases, glasses are still needed after surgery. Surgery corrects the part of the squint that glasses cannot fix — not the refractive error itself. If hyperopia improves with age, glasses may be reduced later, or contact lenses may be used after age 18.</div>
+        <div class="edu-card-text-ar ar-content">في معظم الحالات تُحتاج النظارة بعد الجراحة. الجراحة تصحح الحول الذي لا تعالجه النظارة. إذا تحسنت طول النظر مع العمر، قد تقل الحاجة للنظارة لاحقاً، أو يمكن اللجوء للعدسات اللاصقة بعد سن ١٨.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-num">12</div>
+        <div class="edu-card-title-en en-content">Activity After Surgery</div>
+        <div class="edu-card-title-ar">النشاط اليومي بعد الجراحة</div>
+        <div class="edu-card-text-en en-content">Full return to normal life is medically possible the day after surgery: TV, phone, computer, reading, sports, and outdoor activities are all permitted. The only exception is swimming, which must be avoided for 4 weeks. No special sunglasses required.</div>
+        <div class="edu-card-text-ar ar-content">العودة الكاملة للحياة الطبيعية ممكنة طبياً من اليوم التالي: تلفاز، هاتف، حاسوب، قراءة، رياضة، أنشطة خارجية — كلها مسموح بها. الاستثناء الوحيد: السباحة ممنوعة ٤ أسابيع.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px; padding:28px; background:var(--cream); border:1px solid var(--cream-mid); display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
+      <div style="font-size:32px;">📖</div>
+      <div style="flex:1;">
+        <div class="en-content" style="font-size:14px; font-weight:600; color:var(--navy); margin-bottom:4px;">Full Patient Booklet Available</div>
+        <div class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:15px; font-weight:600; color:var(--navy); direction:rtl; margin-bottom:4px;">الكتيب الكامل متاح للمرضى</div>
+        <div class="en-content" style="font-size:12px; color:var(--text-light);">"Strabismus Surgery: What Should I Know?" — Ask for your copy at the clinic.</div>
+        <div class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:13px; color:var(--text-light); direction:rtl;">"جراحة الحول: ماذا يجب أن أعرف وماذا أتوقع؟" — اطلب نسختك من العيادة.</div>
+      </div>
+      <a href="tel:01223911743" class="btn-primary">
+        <span class="inline-en">📞 Request Booklet</span>
+        <span class="inline-ar">📞 اطلب الكتيب</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── VIDEOS ── -->
+<section class="videos-section" id="videos">
+  <div class="section-inner">
+    <span class="section-label">
+      <span class="inline-en">Educational Content</span>
+      <span class="inline-ar">محتوى تعليمي</span>
+    </span>
+    <h2 class="section-title-en en-content">Video Library</h2>
+    <h2 class="section-title-ar ar-content">مكتبة الفيديوهات</h2>
+    <h2 class="section-title-ar en-content">مكتبة الفيديوهات</h2>
+    <div class="section-rule" style="background:var(--gold);"></div>
+    <p class="en-content" style="font-size:14px; color:rgba(255,255,255,0.6); max-width:600px; line-height:1.9;">Prof. Awadein's YouTube channel features educational videos on strabismus, pediatric eye conditions, and surgical techniques — in Arabic for patients and families.</p>
+    <p class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:15px; color:rgba(255,255,255,0.6); max-width:600px; line-height:2; direction:rtl;">قناة أ.د. عوضين على يوتيوب تضم فيديوهات تعليمية عن الحول وأمراض عيون الأطفال والتقنيات الجراحية — باللغة العربية للمرضى وذويهم.</p>
+
+    <div class="videos-grid">
+      <a href="https://www.youtube.com/channel/UCYHB-3wbSsBmEVHolsUGPaQ" target="_blank" class="video-card">
+        <div class="video-thumb" style="background: linear-gradient(135deg, #0d2240 0%, #2a6496 100%); padding-top:56.25%; position:relative;">
+          <div class="video-play-btn">▶</div>
+          <div style="position:absolute; bottom:12px; left:12px; right:12px; font-size:11px; color:rgba(255,255,255,0.7); letter-spacing:1px; text-transform:uppercase;">Strabismus Surgery</div>
+        </div>
+        <div class="video-info">
+          <div class="video-title-en en-content">What is Strabismus? Causes & Types</div>
+          <div class="video-title-ar">ما هو الحول؟ الأسباب والأنواع</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/channel/UCYHB-3wbSsBmEVHolsUGPaQ" target="_blank" class="video-card">
+        <div class="video-thumb" style="background: linear-gradient(135deg, #1a3a5c 0%, #b8966e 100%); padding-top:56.25%; position:relative;">
+          <div class="video-play-btn">▶</div>
+          <div style="position:absolute; bottom:12px; left:12px; right:12px; font-size:11px; color:rgba(255,255,255,0.7); letter-spacing:1px; text-transform:uppercase;">Pediatric Eye Care</div>
+        </div>
+        <div class="video-info">
+          <div class="video-title-en en-content">Strabismus Surgery: Step by Step</div>
+          <div class="video-title-ar">جراحة الحول: خطوة بخطوة</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/channel/UCYHB-3wbSsBmEVHolsUGPaQ" target="_blank" class="video-card">
+        <div class="video-thumb" style="background: linear-gradient(135deg, #071428 0%, #4a7a9b 100%); padding-top:56.25%; position:relative;">
+          <div class="video-play-btn">▶</div>
+          <div style="position:absolute; bottom:12px; left:12px; right:12px; font-size:11px; color:rgba(255,255,255,0.7); letter-spacing:1px; text-transform:uppercase;">Patient Guide</div>
+        </div>
+        <div class="video-info">
+          <div class="video-title-en en-content">After Surgery: What to Expect</div>
+          <div class="video-title-ar">بعد الجراحة: ماذا أتوقع؟</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="channel-cta">
+      <a href="https://www.youtube.com/channel/UCYHB-3wbSsBmEVHolsUGPaQ" target="_blank" class="btn-primary" style="display:inline-flex; align-items:center; gap:10px; margin-top:8px;">
+        <span style="font-size:18px;">▶</span>
+        <span class="inline-en">Visit YouTube Channel</span>
+        <span class="inline-ar">زيارة قناة يوتيوب</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="reviews-section" id="reviews">
+  <div class="section-inner">
+    <span class="section-label">
+      <span class="inline-en">What Patients Say</span>
+      <span class="inline-ar">ما يقوله المرضى</span>
+    </span>
+    <h2 class="section-title-en en-content">Patient Reviews</h2>
+    <h2 class="section-title-ar ar-content">تقييمات المرضى</h2>
+    <h2 class="section-title-ar en-content">تقييمات المرضى</h2>
+    <div class="section-rule"></div>
+
+    <div class="reviews-summary">
+      <div class="reviews-big-score">4.8</div>
+      <div class="reviews-meta">
+        <div class="reviews-stars-big">★★★★★</div>
+        <div class="reviews-count en-content">BASED ON 53 GOOGLE REVIEWS</div>
+        <div class="reviews-count ar-content" style="font-family:'Tajawal',sans-serif; direction:rtl;">بناءً على ٥٣ تقييم على Google</div>
+      </div>
+      <a href="https://www.google.com/search?q=أحمد+رضا+عوضين+طبيب+عيون" target="_blank" class="google-btn">
+        <span style="font-size:18px;">G</span>
+        <span class="inline-en">See All Reviews</span>
+        <span class="inline-ar">كل التقييمات</span>
+      </a>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text ar-content review-text-ar">دكتور ممتاز جداً، شرح الحالة بالتفصيل وطمأنني قبل العملية. نتيجة الجراحة ممتازة والحمد لله. أنصح به كل الأهالي اللي عندهم أطفال بحول.</p>
+        <p class="review-text en-content">Excellent doctor who explained everything in detail and reassured me before the surgery. The results were outstanding. I highly recommend him to every parent with a child with strabismus.</p>
+        <div class="review-author">M.H.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text ar-content review-text-ar">أفضل دكتور عيون أطفال في مصر. ابني عنده حول من الصغر وبعد الجراحة عند الدكتور أحمد عوضين اتحسن بشكل مذهل. الدكتور محترم ومتعاون جداً.</p>
+        <p class="review-text en-content">The best pediatric ophthalmologist in Egypt. My son had strabismus since childhood and after surgery with Dr. Ahmed Awadein he improved remarkably. Very professional and cooperative doctor.</p>
+        <div class="review-author">S.A.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text ar-content review-text-ar">دكتور على أعلى مستوى من الكفاءة والأخلاق. كشف دقيق وشرح وافي للحالة. العيادة منظمة والتعامل راقي. شكراً دكتور على كل شيء.</p>
+        <p class="review-text en-content">A doctor of the highest level of competence and professionalism. Thorough examination and clear explanation of the condition. Well-organized clinic and excellent patient care. Thank you, Doctor.</p>
+        <div class="review-author">R.K.</div>
+        <div class="review-source">Google Review</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <a href="https://www.google.com/search?q=أحمد+رضا+عوضين+طبيب+عيون" target="_blank" class="btn-outline" style="border-color:var(--navy); color:var(--navy);">
+        <span class="inline-en">Read All 53 Reviews on Google</span>
+        <span class="inline-ar">اقرأ كل ٥٣ تقييم على Google</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── CONTACT ── -->
 <section class="contact-section" id="contact">
   <div class="section-inner">
@@ -930,7 +1424,7 @@
           <div>
             <div class="contact-label-en en-content">Phone</div>
             <div class="contact-label-ar ar-content">الهاتف</div>
-            <div class="contact-value-en"><a href="tel:01284705461" style="color:rgba(255,255,255,0.75); text-decoration:none;">012 84705461</a></div>
+            <div class="contact-value-en"><a href="tel:01223911743" style="color:rgba(255,255,255,0.75); text-decoration:none;">01223911743 · 33351428</a></div>
           </div>
         </div>
         <div class="contact-item">
@@ -943,7 +1437,7 @@
           </div>
         </div>
         <div style="margin-top: 8px;">
-          <a href="tel:01284705461" class="btn-primary">
+          <a href="tel:01223911743" class="btn-primary">
             <span class="inline-en">📞 Call to Book</span>
             <span class="inline-ar">📞 اتصل للحجز</span>
           </a>
