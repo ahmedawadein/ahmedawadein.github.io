@@ -631,6 +631,108 @@
     .whatsapp-float { bottom: 16px; right: 16px; padding: 10px 16px 10px 12px; font-size: 11px; }
   }
 
+
+  /* ── AMBLYOPIA SECTION ── */
+  .amblyopia-section { background: var(--white); }
+  .amblyopia-section .section-title-en { color: var(--navy); }
+
+  .amblyopia-qa { max-width: 820px; margin-top: 48px; }
+
+  .qa-item {
+    border-bottom: 1px solid var(--cream-mid);
+    padding: 24px 0;
+  }
+  .qa-item:last-child { border-bottom: none; }
+
+  .qa-question-en {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .qa-question-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold);
+    direction: rtl;
+    margin-bottom: 10px;
+  }
+  .qa-answer-en {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-mid);
+  }
+  .qa-answer-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-mid);
+    direction: rtl;
+    margin-top: 8px;
+  }
+
+  /* ── PUBLICATIONS SECTION ── */
+  .publications-section { background: var(--cream); }
+  .publications-section .section-title-en { color: var(--navy); }
+
+  .pub-list { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
+
+  .pub-item {
+    background: var(--white);
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px;
+    transition: all 0.3s;
+  }
+  .pub-item:hover { transform: translateX(4px); }
+
+  .pub-year {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .pub-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .pub-journal {
+    font-size: 12px;
+    color: var(--text-light);
+    font-style: italic;
+  }
+  .pub-authors {
+    font-size: 12px;
+    color: var(--text-mid);
+    margin-top: 4px;
+  }
+  .pub-authors strong { color: var(--navy); }
+
+  .scholar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    padding: 12px 28px;
+    background: var(--navy);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .scholar-link:hover { background: var(--gold); color: var(--deep); }
+
   /* ── ANIMATIONS ── */
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -949,7 +1051,7 @@
 
 <!-- ══ SEO META TAGS ══ -->
 <meta name="description" content="Prof. Dr. Ahmed Awadein — Egypt's leading strabismus surgeon and pediatric ophthalmologist. One of the top squint surgery specialists in Egypt, based in Cairo. Expert in lazy eye and children's eye conditions. 4.8★ on Google · 53 Reviews.">
-<meta name="keywords" content="strabismus surgeon Egypt, best strabismus surgeon Egypt, top strabismus surgeon Egypt, strabismus surgeon Cairo, squint surgery Egypt, pediatric ophthalmologist Cairo, best eye doctor Egypt, best eye doctor Cairo, دكتور رمد اطفال القاهرة, جراح الحول القاهرة, جراح حول مصر, أفضل جراح حول في مصر, أحمد عوضين, عيادة عيون الجيزة, جراحة الحول مصر">
+<meta name="keywords" content="amblyopia treatment Cairo, lazy eye treatment Egypt, strabismus surgeon Egypt, best strabismus surgeon Egypt, top strabismus surgeon Egypt, strabismus surgeon Cairo, squint surgery Egypt, pediatric ophthalmologist Cairo, best eye doctor Egypt, best eye doctor Cairo, دكتور رمد اطفال القاهرة, جراح الحول القاهرة, جراح حول مصر, أفضل جراح حول في مصر, أحمد عوضين, عيادة عيون الجيزة, جراحة الحول مصر">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Prof. Dr. Ahmed Awadein">
 <meta name="geo.region" content="EG-GZ">
@@ -979,7 +1081,7 @@
   "@type": "Physician",
   "name": "Prof. Dr. Ahmed Awadein",
   "alternateName": "أ.د. أحمد رضا عوضين",
-  "description": "Professor of Ophthalmology at Cairo University. Leading strabismus surgeon and pediatric ophthalmologist in Egypt. MD, FRCS (Glasgow), Johns Hopkins Fellow.",
+  "description": "Professor of Ophthalmology at Cairo University. Leading strabismus surgeon and pediatric ophthalmologist in Egypt. MD, FRCS (Glasgow), Johns Hopkins Fellow. Author of 59 peer-reviewed publications indexed in PubMed.",
   "url": "https://ahmedawadein.github.io/",
   "telephone": "+20-01223911743",
   "medicalSpecialty": ["Ophthalmology", "Pediatric Ophthalmology", "Strabismus Surgery"],
@@ -1064,6 +1166,8 @@
     <span class="inline-en">Expertise</span><span class="inline-ar">التخصص</span>
   </a>
   <a href="#education"><span class="inline-en">Patient Ed.</span><span class="inline-ar">تثقيف المرضى</span></a>
+  <a href="#amblyopia"><span class="inline-en">Amblyopia</span><span class="inline-ar">كسل العين</span></a>
+  <a href="#publications"><span class="inline-en">Research</span><span class="inline-ar">أبحاث</span></a>
   <a href="#videos"><span class="inline-en">Videos</span><span class="inline-ar">فيديوهات</span></a>
   <a href="#reviews"><span class="inline-en">Reviews</span><span class="inline-ar">التقييمات</span></a>
   <a href="#contact">
@@ -1424,6 +1528,242 @@
     </div>
   </div>
 </section>
+
+<!-- ── AMBLYOPIA (LAZY EYE) ── -->
+<section class="amblyopia-section" id="amblyopia">
+  <div class="section-inner">
+    <span class="section-label">
+      <span class="inline-en">Patient Guide</span>
+      <span class="inline-ar">دليل المرضى</span>
+    </span>
+    <h2 class="section-title-en en-content">Amblyopia (Lazy Eye) — Questions & Answers</h2>
+    <h2 class="section-title-ar ar-content">كسل العين — أسئلة وأجوبة</h2>
+    <h2 class="section-title-ar en-content">كسل العين — أسئلة وأجوبة</h2>
+    <div class="section-rule"></div>
+
+    <div class="amblyopia-qa">
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">What is amblyopia (lazy eye)?</div>
+        <div class="qa-question-ar">ما هو كسل العين؟</div>
+        <div class="qa-answer-en en-content">Amblyopia means reduced visual acuity in one eye compared to the other, even after correcting all underlying causes. The problem has two components: one in the eye itself, and one in the brain, which loses its ability to process the image from the affected eye.</div>
+        <div class="qa-answer-ar ar-content">كسل العين هو انخفاض حدة الإبصار في إحدى العينين عن الأخرى حتى بعد علاج جميع الأسباب. المشكلة ذات شقين: شق من العين ناتج عن المشكلة الأصلية، وشق من المخ الذي يفقد قدرته على استخدام الصورة التي تصله من العين.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">How common is amblyopia in children?</div>
+        <div class="qa-question-ar">ما مدى انتشار كسل العين؟</div>
+        <div class="qa-answer-en en-content">Amblyopia affects 2–5% of children — meaning at least one child in every 30 has amblyopia in one eye. Early detection and treatment are essential, as outcomes are best before the age of 7.</div>
+        <div class="qa-answer-ar ar-content">تتراوح نسبة كسل العين بين 2 و5%، مما يعني أنه بين كل 30 طفلاً يوجد طفل واحد على الأقل مصاب بالكسل. أفضل نتائج العلاج تكون قبل سن السبع سنوات.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">What are the causes of amblyopia?</div>
+        <div class="qa-question-ar">ما هي أسباب كسل العين؟</div>
+        <div class="qa-answer-en en-content">The most common causes are: (1) Unilateral strabismus — when one eye consistently deviates, the brain favors the other eye; (2) Refractive errors — especially when the two eyes have unequal prescriptions (anisometropia); (3) Eye diseases in childhood such as congenital cataract, glaucoma, or corneal opacity that block the visual image from reaching the brain during the critical period.</div>
+        <div class="qa-answer-ar ar-content">أشهر الأسباب: (١) الحول المرتكز في عين واحدة؛ (٢) عيوب الانكسار — خاصةً عند وجود فارق بين العينين في مقاسات النظارة؛ (٣) أمراض العين في الطفولة كالمياه البيضاء الخلقية أو الزرقاء أو سحابات القرنية التي تمنع الصورة من الوصول للمخ.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">How is amblyopia treated?</div>
+        <div class="qa-question-ar">ما هي طرق علاج كسل العين؟</div>
+        <div class="qa-answer-en en-content">Treatment falls into three main approaches: (1) Patching the good eye — covering it for 4–6 hours daily to force the brain to use the lazy eye; (2) Atropine drops — instilling one drop in the good eye twice weekly as an alternative to patching in mild cases; (3) Dichoptic training — exercises using 3D glasses and computer/virtual reality programs, often used alongside patching for older or non-compliant patients.</div>
+        <div class="qa-answer-ar ar-content">طرق العلاج ثلاثة: (١) تغطية العين السليمة ٤–٦ ساعات يومياً؛ (٢) قطرة الأتروبين — نقطة في العين السليمة يومين متتاليين أسبوعياً في حالات الكسل البسيط؛ (٣) التمارين الثنائية بالنظارات المجسمة والكمبيوتر والواقع الافتراضي — كوسيلة مساعدة أو للمرضى غير المستجيبين.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">Does patching harm the good eye?</div>
+        <div class="qa-question-ar">هل تغطية العين السليمة تضرها؟</div>
+        <div class="qa-answer-en en-content">No. Patching the good eye for up to 6 hours daily does not cause any harm or reduction in vision in that eye. The vision in the good eye is fully protected.</div>
+        <div class="qa-answer-ar ar-content">لا. تغطية العين السليمة حتى ست ساعات يومياً لا تسبب أي ضرر لها ولا تؤدي إلى أي انخفاض في الرؤية.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">My child refuses to wear the patch — what can I do?</div>
+        <div class="qa-question-ar">ماذا أفعل إذا رفض طفلي التغطية؟</div>
+        <div class="qa-answer-en en-content">Patching can be challenging, especially for young children. Helpful strategies include: making it fun (let them decorate the patch, play "pirates"); linking screen time or favourite activities to patching hours; rewarding daily compliance; explaining the importance of treatment to older children. You can also start with fewer hours and gradually increase the time.</div>
+        <div class="qa-answer-ar ar-content">يمكن تسهيل التغطية بعدة طرق: جعل الموضوع مرحاً كتلوين الغيار أو لعبة القراصنة؛ ربط الألعاب الإلكترونية بوقت التغطية كوسيلة مزدوجة الفائدة؛ مكافأة الطفل على الالتزام؛ شرح أهمية العلاج للأطفال الأكبر سناً، والبدء بساعات أقل ثم الزيادة تدريجياً.</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-question-en en-content">Is there a surgical treatment for amblyopia?</div>
+        <div class="qa-question-ar">هل يمكن علاج كسل العين بالجراحة؟</div>
+        <div class="qa-answer-en en-content">No. There is no surgical treatment for amblyopia. The condition is related to the brain's ability to process the visual image — not to the eye's optics. Laser and lens implant procedures may eliminate the need for glasses, but they do not improve visual acuity beyond what is achievable with glasses.</div>
+        <div class="qa-answer-ar ar-content">لا. لا توجد جراحة لعلاج كسل العين لأن المشكلة مرتبطة بقدرة المخ على ترجمة الصورة. جراحات تصحيح الإبصار كالليزك قد تُغني عن النظارة لكنها لا تُحسن حدة الإبصار عن مستواها بالنظارة الطبية.</div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:40px; padding:24px 28px; background:var(--navy); display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <div style="font-size:28px;">📘</div>
+      <div style="flex:1;">
+        <div class="en-content" style="font-size:13px; font-weight:600; color:var(--gold-light); margin-bottom:4px;">Full Amblyopia Patient Booklet Available at the Clinic</div>
+        <div class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:14px; font-weight:600; color:var(--gold-light); direction:rtl; margin-bottom:4px;">كتيب كسل العين الكامل متاح في العيادة</div>
+        <div class="en-content" style="font-size:12px; color:rgba(255,255,255,0.5);">"Amblyopia: Important Information for You and Your Child" — ask for your copy.</div>
+        <div class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:12px; color:rgba(255,255,255,0.5); direction:rtl;">"كسل العين: معلومات هامة لك ولطفلك" — اطلب نسختك من العيادة.</div>
+      </div>
+      <a href="tel:01223911743" class="btn-primary" style="white-space:nowrap;">
+        <span class="inline-en">📞 Book Appointment</span>
+        <span class="inline-ar">📞 احجز موعداً</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PUBLICATIONS ── -->
+<section class="publications-section" id="publications">
+  <div class="section-inner">
+    <span class="section-label">
+      <span class="inline-en">Scientific Research</span>
+      <span class="inline-ar">البحث العلمي</span>
+    </span>
+    <h2 class="section-title-en en-content">PubMed Publications</h2>
+    <h2 class="section-title-ar ar-content">الأبحاث العلمية المنشورة</h2>
+    <h2 class="section-title-ar en-content">الأبحاث العلمية المنشورة</h2>
+    <div class="section-rule"></div>
+    <p class="en-content" style="font-size:14px; color:var(--text-mid); max-width:720px; line-height:1.9;">Prof. Awadein has <strong>59 publications</strong> indexed in PubMed, spanning strabismus surgery, pediatric ophthalmology, binocular vision, and ocular genetics. A selection of recent publications is listed below.</p>
+    <p class="ar-content" style="font-family:'Tajawal',sans-serif; font-size:15px; color:var(--text-mid); max-width:720px; line-height:2; direction:rtl;">نشر أ.د. عوضين <strong>٥٩ بحثاً علمياً</strong> مفهرساً في PubMed في مجالات جراحة الحول وطب عيون الأطفال والرؤية الثنائية وجينات العين.</p>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-title">Yamane Technique for the Management of Cataract in Children with Insufficient Capsular Support</div>
+        <div class="pub-journal">Current Eye Research, 2026</div>
+        <div class="pub-authors">Sedhom CR, Bahgat N, <strong>Awadein A</strong>, et al. · PMID: 41937488</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-title">Standard Monofocal vs Enhanced Monofocal Intraocular Lenses for Children 6–13 Years Old with Pediatric Cataract</div>
+        <div class="pub-journal">Journal of Pediatric Ophthalmology &amp; Strabismus, 2026 · Clinical Trial</div>
+        <div class="pub-authors">Elzawahry S, Elhilali H, <strong>Awadein A</strong>, et al. · PMID: 40736060</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-title">Surgical Management of Overcorrection After Nasal Transposition of the Split Lateral Rectus Muscle</div>
+        <div class="pub-journal">Journal of AAPOS, 2026</div>
+        <div class="pub-authors">Elkhawaga M, Hossameldin M, <strong>Awadein A</strong>, et al. · PMID: 41621774</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-title">Predictors of Nonsurgical Consecutive Exotropia Following Accommodative Esotropia</div>
+        <div class="pub-journal">Journal of AAPOS, 2025</div>
+        <div class="pub-authors">ElHilali H, <strong>Awadein A</strong>, Radwan R, et al. · PMID: 41276150</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-title">True Muscle Transplantation for the Management of Third Nerve Palsy</div>
+        <div class="pub-journal">Canadian Journal of Ophthalmology, 2025</div>
+        <div class="pub-authors"><strong>Awadein A</strong>, Farag CS, Maher S. · PMID: 40339604</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-title">Outcomes of Nishida Muscle Transposition Procedure for Abducens Nerve Palsy</div>
+        <div class="pub-journal">American Journal of Ophthalmology, 2025</div>
+        <div class="pub-authors">Maher S, <strong>Awadein A</strong>, Farag C, et al. · PMID: 40154906</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-title">Zip-up Loop Myopexy in Heavy Eye Syndrome</div>
+        <div class="pub-journal">Journal of Pediatric Ophthalmology &amp; Strabismus, 2024</div>
+        <div class="pub-authors"><strong>Awadein A</strong>, Farag CS, Maher S. · PMID: 38482802</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-title">Outcome of Intraocular Lens Exchange for the Management of Myopic Shift in Pseudophakic Children</div>
+        <div class="pub-journal">European Journal of Ophthalmology, 2024</div>
+        <div class="pub-authors">Zedan R, Farag CS, Gouda J, <strong>Awadein A</strong>, et al. · PMID: 38055956</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-title">Randomized Controlled Trial of Patching vs Dichoptic Stimulation Using Virtual Reality for Amblyopia Therapy</div>
+        <div class="pub-journal">Current Eye Research, 2024 · Clinical Trial</div>
+        <div class="pub-authors">Meqdad Y, El-Basty M, <strong>Awadein A</strong>, Gouda J, Hassanein D. · PMID: 37878538</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2023</div>
+        <div class="pub-title">Convergence Excess Esotropia: Review</div>
+        <div class="pub-journal">Journal of Binocular Vision and Ocular Motility, 2023 · Review</div>
+        <div class="pub-authors"><strong>Awadein A</strong>, Gouda J, Elhilali H, Arnoldi K. · PMID: 37931118</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2023</div>
+        <div class="pub-title">Palpebral Fissure Changes in the Contralateral Eye in Duane Retraction Syndrome</div>
+        <div class="pub-journal">Journal of Pediatric Ophthalmology &amp; Strabismus, 2023</div>
+        <div class="pub-authors">Ismail M, <strong>Awadein A</strong>. · PMID: 37227993</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2022</div>
+        <div class="pub-title">Muscle Fenestration in Vertical Rectus Muscle Surgeries</div>
+        <div class="pub-journal">European Journal of Ophthalmology, 2022</div>
+        <div class="pub-authors"><strong>Awadein A</strong>, Arfeen S. · PMID: 36168236</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2020</div>
+        <div class="pub-title">Surgical Outcome of Exotropic Duane Syndrome</div>
+        <div class="pub-journal">Seminars in Ophthalmology, 2020</div>
+        <div class="pub-authors">Fouad HM, <strong>Awadein A</strong>, Youssef AA, et al. · PMID: 32126862</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2020</div>
+        <div class="pub-title">Extraocular Muscle Fenestration: A Novel Weakening Procedure</div>
+        <div class="pub-journal">Canadian Journal of Ophthalmology, 2020</div>
+        <div class="pub-authors">Rageh MA, <strong>Awadein A</strong>, Arfeen SA. · PMID: 32860744</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2018</div>
+        <div class="pub-title">Synergistic Divergence: Case Series and Literature Review</div>
+        <div class="pub-journal">British Journal of Ophthalmology, 2018 · Review</div>
+        <div class="pub-authors"><strong>Awadein A</strong>, Zedan RH. · PMID: 29025700</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2017</div>
+        <div class="pub-title">Progression of High Anisometropia in Children</div>
+        <div class="pub-journal">Journal of Pediatric Ophthalmology &amp; Strabismus, 2017</div>
+        <div class="pub-authors">Zedan RH, El-Fayoumi D, <strong>Awadein A</strong>. · PMID: 28510775</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2007</div>
+        <div class="pub-title">The Retinal Ciliopathies</div>
+        <div class="pub-journal">Ophthalmic Genetics, 2007 · Review</div>
+        <div class="pub-authors">Adams NA, <strong>Awadein A</strong>, Toma HS. · PMID: 17896309</div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ahmed+awadein&sort=date&sort_order=desc" target="_blank" class="scholar-link">
+        <span style="font-size:16px;">🔬</span>
+        <span class="inline-en">View All 59 Publications on PubMed</span>
+        <span class="inline-ar" style="font-family:'Tajawal',sans-serif;">كل الأبحاث على PubMed</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=z3sOh7sAAAAJ&hl=en" target="_blank" class="scholar-link" style="background:var(--gold); color:var(--deep);">
+        <span style="font-size:16px;">🎓</span>
+        <span class="inline-en">Google Scholar Profile</span>
+        <span class="inline-ar" style="font-family:'Tajawal',sans-serif;">Google Scholar</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ── REVIEWS ── -->
 <section class="reviews-section" id="reviews">
